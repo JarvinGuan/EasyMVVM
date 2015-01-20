@@ -1,0 +1,12 @@
+﻿<Window x:Class="TestClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="GetName" HorizontalAlignment="Left" Height="72" Margin="267,110,0,0" Command="{Binding GetNameCommand}"
+                VerticalAlignment="Top" Width="206" />
+        <TextBox HorizontalAlignment="Left" Height="58" Margin="69,124,0,0" TextWrapping="Wrap"
+                 Text="{Binding Name,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                 VerticalAlignment="Top" Width="161"/>
+    </Grid>
+</Window>
